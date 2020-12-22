@@ -1,0 +1,68 @@
+/* graph heading */
+
+.title {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+
+    /* identical to box height */
+    letter-spacing: 0.4px;
+
+    /* grayscale / black */
+    color: #252733;
+}
+
+.subtitleAndLegend {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.subtitle {
+    font-size: 12px;
+    line-height: 16px;
+
+    /* identical to box height, or 133% */
+    letter-spacing: 0.1px;
+
+    /* grayscale / gray */
+    color: #9FA2B4;
+}
+
+.legend, .legendInstance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.legend {
+    width: 15%;
+}
+
+.legendInstance {
+    gap: 8px;
+}
+
+.bar {
+    width: 16px;
+}
+
+.blue {
+    border: 2px solid #3751FF;
+}
+
+.gray {
+    border: 2px solid #DFE0EB;
+}
+
+.legendText {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1px;
+
+    /* grayscale / gray */
+    color: #9FA2B4;
+}

@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+
+    /* grayscale / black */
+    color: #252733;
+}
+
+.buttons {
+    display: flex;
+    width: 75px;
+    justify-content: space-between;
+}
+
+.divider {
+    border: 1px solid #DFE0EB;
+}
+
+.profile, .profileAndButtons, .circle {
+    display: flex;
+    align-items: center;
+}
+
+.profile {
+    gap: 1rem;
+}
+
+.profileAndButtons {
+    gap: 5rem;
+}
+
+.circle {
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid #DFE0EB;
+    border-radius: 25px;
+}

@@ -1,0 +1,10 @@
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    background: #F7F8FC;
+    width: calc(100% - 15%);
+    height: 100%;
+}
+

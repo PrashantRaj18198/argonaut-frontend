@@ -1,0 +1,74 @@
+
+.container {
+    position: absolute;
+    background: #363740;
+    height: 100%;
+    width: 15%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 140px;
+}
+
+.headingDashboard {
+    justify-content: space-between;
+}
+
+.headingTab {
+    justify-content: center;
+    width: 100%;
+    height: 56px;
+    gap: 10px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+
+    /* identical to box height */
+    letter-spacing: 0.4px;
+
+    /* sidebar / gray */
+    color: #A4A6B3;
+    opacity: 0.7;
+}
+
+.tabs {
+    margin-top: 20%;
+    width: 100%;
+}
+
+.tabTitle {
+    font-size: 16px;
+    line-height: 20px;
+
+    /* identical to box height */
+    letter-spacing: 0.2px;
+
+    /* accent / light */
+    color: #DDE2FF;
+}
+
+.selectedTab {
+    background: rgba(159,162,180, 0.08);
+}
+
+.verticalBar {
+    position: absolute;
+    width: 3px;
+    left: 0;
+    height: 56px;
+    /* accent / light */
+    background: #DDE2FF;
+}

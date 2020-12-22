@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+
+    /* grayscale / white */
+    background: #FFFFFF;
+
+    /* grayscale / divider */
+    border: 1px solid #DFE0EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* padding: 2rem 2rem 2rem 2rem; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
