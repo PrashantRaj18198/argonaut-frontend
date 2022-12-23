@@ -9,19 +9,20 @@ services:
   - port: 80
     protocol: "tls-terminated" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
     external:
-      overrideAnnotations:
-        "o": "v"
+      extraAnnotations:
+        "asdsafsdf/dsfsdfs/f/sd/fs/df@3": "sdaskdaksl932489234//"
       hosts:
-        - "dummy.pp.argonaut.live"
+        - "sd"
       hostPort: 443
       paths: ["/"]
-  - port: 90
+  - port: 232
     protocol: "tls-terminated" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
     external:
-      extraAnnotations:
-        "e": "a"
+      overrideAnnotations:
+        "aaa": "fff"
+        "sdf24234///wqeqwe": "fsd"
       hosts:
-        - "a"
+        - "ewer"
       hostPort: 443
       paths: ["/"]
 
@@ -197,4 +198,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2022-12-23 12:46:43.459551925 +0000 UTC
+# Generated at 2022-12-23 13:06:26.087649053 +0000 UTC
