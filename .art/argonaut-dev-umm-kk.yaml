@@ -6,25 +6,14 @@ imageTag: "latest"
 
 
 services:
-  - port: 80
-    protocol: "tls-terminated" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
+  - port: 9000
+    protocol: "tcp" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
     external:
-      extraAnnotations:
-        "asdsafsdf/dsfsdfs/f/sd/fs/df@3": "sdaskdaksl932489234//"
-      hosts:
-        - "sd"
-      hostPort: 443
-      paths: ["/"]
-  - port: 232
-    protocol: "tls-terminated" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
+      hostPort: 8978
+  - port: 6435
+    protocol: "tcp" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
     external:
-      overrideAnnotations:
-        "aaa": "fff"
-        "sdf24234///wqeqwe": "fsd"
-      hosts:
-        - "ewer"
-      hostPort: 443
-      paths: ["/"]
+      hostPort: 2048
 
 argonaut:
   env: dev
@@ -198,4 +187,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2022-12-23 13:06:26.087649053 +0000 UTC
+# Generated at 2023-01-02 10:14:08.191408605 +0000 UTC
