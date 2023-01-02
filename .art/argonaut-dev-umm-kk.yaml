@@ -15,6 +15,7 @@ services:
     external:
       extraAnnotations:
         "1": "2"
+        "2": "4"
       hosts:
         - "e.in"
       hostPort: 443
@@ -192,4 +193,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2023-01-02 10:15:39.181481195 +0000 UTC
+# Generated at 2023-01-02 10:18:51.33309977 +0000 UTC
