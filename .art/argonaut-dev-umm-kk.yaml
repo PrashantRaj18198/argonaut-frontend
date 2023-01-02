@@ -10,10 +10,15 @@ services:
     protocol: "tcp" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
     external:
       hostPort: 8978
-  - port: 6435
-    protocol: "tcp" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
+  - port: 80
+    protocol: "tls-terminated" # tls-passthrough, tls-terminated, tcp, http, grpc need to be supported
     external:
-      hostPort: 2048
+      extraAnnotations:
+        "1": "2"
+      hosts:
+        - "e.in"
+      hostPort: 443
+      paths: ["/"]
 
 argonaut:
   env: dev
@@ -187,4 +192,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2023-01-02 10:14:08.191408605 +0000 UTC
+# Generated at 2023-01-02 10:15:39.181481195 +0000 UTC
