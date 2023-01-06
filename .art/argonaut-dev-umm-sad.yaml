@@ -50,7 +50,25 @@ scaledObject:
           value: "55"
         metricType: Utilization
         type: cpu
+        authenticationRef:
+          name: trigger-auth-cpu-sad
   
+scaledObjectAuth: 
+  apiVersion: keda.sh/v1alpha1
+  kind: TriggerAuthentication
+  metadata:
+    name: trigger-auth-cpu-sad
+  spec:
+    secretTargetRef:
+      - parameter: userName
+        name: app-user-creds-secret
+        key: APP_USER
+      - parameter: password
+        name: app-user-creds-secret
+        key: APP_PASSWORD_IS_NULL
+      - parameter: ok
+        name: yolo
+        key: AjlkjklD_IS_NULL
 # Can only do one of the httpGet and exec handler methods for livenessProbe
 livenessProbe:
   httpGet:
@@ -234,4 +252,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2023-01-06 06:34:05.410459162 +0000 UTC
+# Generated at 2023-01-06 06:36:25.443958074 +0000 UTC
