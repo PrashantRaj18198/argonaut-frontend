@@ -32,27 +32,6 @@ resources:
 #########################################################################################
 
 # Keda configuration
-scaledObject: 
-  apiVersion: keda.sh/v1alpha1
-  kind: ScaledObject
-  metadata:
-    name: cpu-sad-scaledobject
-    namespace: umm
-  spec:
-    cooldownPeriod: 200
-    maxReplicaCount: 100
-    minReplicaCount: 1
-    pollingInterval: 15
-    scaleTargetRef:
-      name: sad
-    triggers:
-      - authenticationRef:
-          name: trigger-auth-cpu-sad
-        metadata:
-          value: "55"
-        metricType: Utilization
-        type: cpu
-  
 # Can only do one of the httpGet and exec handler methods for livenessProbe
 livenessProbe:
   httpGet:
@@ -236,4 +215,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2023-01-06 06:40:12.789989093 +0000 UTC
+# Generated at 2023-01-06 06:40:30.704578241 +0000 UTC
