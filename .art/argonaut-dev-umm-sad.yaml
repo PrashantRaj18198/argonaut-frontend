@@ -39,15 +39,15 @@ scaledObject:
     name: cpu-sad-scaledobject
     namespace: umm
   spec:
-    cooldownPeriod: 500
+    cooldownPeriod: 200
     maxReplicaCount: 100
-    minReplicaCount: 2
-    pollingInterval: 30
+    minReplicaCount: 1
+    pollingInterval: 15
     scaleTargetRef:
       name: sad
     triggers:
       - metadata:
-          value: "65"
+          value: "55"
         metricType: Utilization
         type: cpu
   
@@ -234,4 +234,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2023-01-06 06:32:12.602906978 +0000 UTC
+# Generated at 2023-01-06 06:34:05.410459162 +0000 UTC
