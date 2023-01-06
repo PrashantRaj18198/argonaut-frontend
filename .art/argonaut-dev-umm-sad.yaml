@@ -35,7 +35,7 @@ resources:
 # Can only do one of the httpGet and exec handler methods for livenessProbe
 livenessProbe:
   httpGet:
-    path: /art/path
+    path: /arthskjadkasd/asdasdasfasf
     port: 80
   
   # exec:
@@ -53,7 +53,7 @@ livenessProbe:
 # Can only do one of the httpGet and exec handler methods for readinessProbe
 readinessProbe:
   httpGet:
-    path: /art/path
+    path: /arthskjadkasd/asdasdasfasf
     port: 80
   
   # # Handler 2
@@ -215,4 +215,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2023-01-06 06:20:05.304016725 +0000 UTC
+# Generated at 2023-01-06 06:20:52.913943871 +0000 UTC
