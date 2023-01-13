@@ -20,6 +20,12 @@ persistentStorage:
   - capacity: "9Mi"
     mountPath: "/"
     accessMode: "ReadOnlyMany" # ReadWriteOnce and ReadOnlyMany are supported
+  - capacity: "8Mi"
+    mountPath: "/lll"
+    accessMode: "ReadWriteOnce" # ReadWriteOnce and ReadOnlyMany are supported
+  - capacity: "7Mi"
+    mountPath: "/kkk"
+    accessMode: "ReadOnlyMany" # ReadWriteOnce and ReadOnlyMany are supported
 
 replicas: 1
 minReplicas: 1
@@ -182,4 +188,4 @@ extraEnvs: []
 #  - name: MY_ENVIRONMENT_VAR
 #    value: the_value_goes_here
 
-# Generated at 2023-01-13 05:30:22.8968399 +0000 UTC
+# Generated at 2023-01-13 06:14:39.148780098 +0000 UTC
